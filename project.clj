@@ -14,7 +14,8 @@
                  [clj-oauth "1.5.2"]]
   ;:ring {:handler about_your_book_search.api/app}
   :main about-your-book-search.api
-  :uberjar-name "server.jar"
+  :uberjar-name "about-books-standalone.jar"
   :target-path "target/%s"
   :profiles {:dev {:dependencies [[javax.servlet/javax.servlet-api "3.1.0"]]
-                   :plugins [[lein-ring "0.12.5"]]}})
+                   :plugins [[lein-ring "0.12.5"]]}
+             :uberjar {:aot :all}})

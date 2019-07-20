@@ -4,7 +4,8 @@
             [org.httpkit.server :as httpkit]
             [about-your-book-search.core :as find]
             [schema.core :as s]
-            ))
+            )
+  (:gen-class))
 
 (s/defschema Book
   {:bookName s/Str})
