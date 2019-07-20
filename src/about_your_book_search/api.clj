@@ -10,7 +10,6 @@
 (s/defschema Book
   {:bookName s/Str})
 
-
 (def app
   (api
     {:swagger

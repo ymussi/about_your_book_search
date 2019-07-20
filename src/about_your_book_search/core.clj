@@ -8,7 +8,6 @@
             [config.config :as cfg])
   (:import [java.net URLEncoder]))
 
-
 (def main-url "https://www.goodreads.com")
 (def url-find-book "/search/index.xml")
 (def url-review-title "/book/title.xml")
