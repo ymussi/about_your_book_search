@@ -24,7 +24,6 @@
   (string/join "&" (map (fn [[k v]] (str k "=" (. URLEncoder encode v))) data)))
 
 (defn url-get-xml
-  "Retrieves the xml response from api-url"
   ([api-url] (url-get-xml api-url) {})
   ([api-url data]
    (http/get (str main-url api-url "?" (parametric (conj default-key data))))))

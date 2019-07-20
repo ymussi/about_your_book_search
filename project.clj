@@ -12,7 +12,6 @@
                  [clj-oauth "1.5.5"]
                  [clj-http "2.2.0"]
                  [clj-oauth "1.5.2"]]
-  ;:ring {:handler about_your_book_search.api/app}
   :main about-your-book-search.api
   :uberjar-name "about-books-standalone.jar"
   :target-path "target/%s"
