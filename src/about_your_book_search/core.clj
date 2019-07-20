@@ -39,13 +39,11 @@
 (def url-get-parsed (comp parse-xml-body url-get-xml))
 
 (defn find-book
-  ([query-string] (find-book query-string 1))
-  ([query-string page] (find-book query-string page "all"))
-  ([query-string page field]
+ [query page field]
    (url-get-parsed url-find-book
-                   {"q" query-string
+                   {"q" query
                     "page" (str page)
-                    "field" field})))
+                    "field" field}))
 
 (defn reviews-title [title]
   (url-get-parsed url-review-title
