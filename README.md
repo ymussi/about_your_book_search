@@ -8,7 +8,7 @@
    - After that, run: lein run to start the API;
    - The API is running on localhost:3000;
 
- - To Louch:
+ - Launch:
  
    - Open your browser and enter the URL: localhost:3000 to access the API;
    - This API has only one endpoint POST "/api/search-your-book", and in your payload you type the name of the book you want        to get information about.
