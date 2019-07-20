@@ -20,7 +20,7 @@
              :tags [{:name "api", :description ""}]}}}
 
     (context "/api" []
-      :tags ["api"]
+      :tags ["Book Details"]
 
       (POST "/search-your-book" []
            ;:return Book
