@@ -23,7 +23,6 @@
       :tags ["Book Details"]
 
       (POST "/search-your-book" []
-           ;:return Book
            :summary "Find details about your book name."
            :body [bookName Book]
            (ok (find/search-book (:bookName bookName))))
